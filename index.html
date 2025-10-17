@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio YaBlessed</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <style>
+        .about img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .skills-list ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills-list li {
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 1rem;
+            box-shadow: 0 1px 3px rgba(21, 101, 192, 0.07);
+        }
+
+        .row {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: cyan;
+        }
+
+        .container-fluid {
+            width: 100%;
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project {
+            background: #f7fafd;
+            padding: 1.2rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #0077b6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 0.7rem 0.5rem;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            padding-bottom: 70px;
+            padding-top: 100px;
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header {
+                padding: 2%;
+            }
+
+            body {
+                padding-top: 55%;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .container-fluid {
+                padding: 1rem;
+            }
+        }
+    </style>
+    <!-- ...existing code... -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<!-- ...existing code... -->
+</head>
+
+<body>
+    <header>
+        <h1>Blessed Madzvoka</h1>
+        <p>Web Developer & Designer</p>
+        <nav aria-label="Main navigation" role="navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid mt-2">
+    <div class="row">
+        <div class="col-md-6 col-12 d-flex flex-column align-items-center">
+            <figure>
+                <img src="chi.jpg" alt="Blessed Madzvoka" class="img-fluid rounded" style="max-width:250px; height:auto;border-radius:50%;" >
+                <figcaption class="text-center"><strong>Blessed Madzvoka</strong></figcaption>
+            </figure>
+        </div>
+        <div class="col-md-6 col-12">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I am Blessed Madzvoka, a computer science student at Midlands State University. I'm passionate about web development and design, still learning and exploring new technologies to enhance my skills.
+                </p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <ul>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Responsive Web Designing</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-12">
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio showcasing my skills and projects, built with HTML, CSS, Bootstrap and JavaScript.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Secure File Sharing System</h3>
+                        <p>A simple project for sharing files securely online using Python and Flask.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-lg-4 col-12">
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:madzvokab01.gmail.com">madzvokab01(dot)gmail(dot)com</a></p>
+                <p>Call : <a href="tel:+263719519383">+263719519383</a> or <a href="tel:+263779896563">+263779896563</a></p>
+            </section>
+        </div>
+    </div>
+</div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    &copy; 2025 Blessed Madzvoka. All rights reserved.<br>
+    </a>
+    &nbsp;|&nbsp;
+    <a href="https://linkedin.com/in/blessedmadzvoka" target="_blank" class="text-white" style="text-decoration: none;">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+     &nbsp;|&nbsp;
+    <a href="https://facebook.com/blessedmadzvoka" target="_blank" class="text-white" style="text-decoration: none;">
+        <i class="fab fa-facebook"></i> Facebook
+    </a>
+    </footer>
+</body>
+
+</html>
